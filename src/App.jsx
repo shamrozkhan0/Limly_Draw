@@ -1,12 +1,13 @@
 import './App.css'
+import Banner from './Comonents/Banner'
+import Navbar from './Comonents/Navbar'
 
 function App() {
  return(
-  <div>
-
-  <h2>Testing...</h2>
-  <p>paragraph</p>
-  </div>
+  <>
+  <Navbar />
+  <Banner />
+  </>
  )
 }
 
