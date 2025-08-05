@@ -1,12 +1,9 @@
 import './App.css'
+import Loader from './Comonents/Loader'
 
 function App() {
  return(
-  <div>
-
-  <h2>Testing...</h2>
-  <p>paragraph</p>
-  </div>
+    <Loader/>
  )
 }
 
