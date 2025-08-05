@@ -277,6 +277,7 @@ ul.benefits li {
 }
 .flex-col-work:hover{
   background: #3E56DF;
+  cursor: pointer;
   transition: 0.3s all ease-in-out;
   box-shadow:0px 4px 64.87px #abb6f5 ;
 }
@@ -410,8 +411,9 @@ ul.benefits li {
 }
 .choose-col:hover{
   background: #3E56DF;
+  cursor: pointer;
   transition: 0.3s all ease-in-out;
- 
+  transform: translateY(-20px);
 }
 .choose-col h3{
   color: #000;
@@ -441,6 +443,70 @@ ul.benefits li {
   height: 70px;
 }
 /* choose End */
+
+/* ************* */
+
+/* Subscribe Start */
+.subscribe-main{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sub-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.sub-col-40{
+  width: 40%;
+}
+.sub-col-60{
+  width: 60%;
+}
+.sub-flex h2{
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.sub-flex p{
+  font-size: 16px;
+  line-height: 24px;
+}
+.sub-flex img{
+  width: 100%;
+}
+
+.sub-flex h4{
+  margin-top: 30px;
+  font-size: 20px;
+}
+.form-control-news{
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow:0px 4px 64.87px rgba(0, 0, 0, 0.10);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-control-news input{
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+.msg-icon{
+  font-size: 20px;
+  color: #000;
+}
+.btn-email{
+  background: #3E56DF;
+  color: #fff;
+  padding: 14px ;
+  line-height: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Subscribe End */
 
 
 

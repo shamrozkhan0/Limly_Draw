@@ -6,6 +6,7 @@ import Partners from './Comonents/Partners'
 import Work from './Comonents/Work'
 import Secure from './Comonents/Secure'
 import Choose from './Comonents/Choose'
+import { Subscribe } from './Comonents/Subscribe'
 
 
 
@@ -19,6 +20,7 @@ const ComponentWrapper = () => {
         <Work />
         <Secure />
         <Choose />
+        <Subscribe />
       </>
     )
   }
