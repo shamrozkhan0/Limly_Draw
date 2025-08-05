@@ -49,14 +49,24 @@ h1,h2,h3,h4,h5,h6{
   font-family: "Quicksand-Bold";
   margin: 0;
 }
+
 p{
   margin: 0;
 }
 
 .container{
-  max-width: 1180px;
+  max-width: 1400px;
   margin: auto;
 }
+
+.fs-70{
+  font-size: 70px;
+}
+
+
+
+
+/* Remove this CSS ASAP and appply Bootstrap or Tailwind */
 .my-nav {
   padding: 15px 0;
 }
