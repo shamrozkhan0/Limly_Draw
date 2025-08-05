@@ -1,9 +1,13 @@
 import './App.css'
-import Loader from './Comonents/Loader'
-
+import Banner from './Comonents/Banner'
+import Navbar from './Comonents/Navbar'
 function App() {
  return(
-    <Loader/>
+  <>
+  <Loader/>
+  <Navbar />
+  <Banner />
+  </>
  )
 }
 
