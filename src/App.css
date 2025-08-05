@@ -54,7 +54,7 @@ p{
 }
 
 .container{
-  max-width: 1180px;
+  max-width: 1400px;
   margin: auto;
 }
 .my-nav {
@@ -202,3 +202,68 @@ ul.benefits{
 ul.benefits li {
   color: #141F39;
 }
+/*banner css end  */
+
+/* ***************** */
+
+/*partner css start  */
+.partner-main{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.partner-inner{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 60px;
+}
+.partner-inner img{
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+
+}
+.partner-inner img:hover{
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+}
+/*partner css end  */
+
+/********************/
+
+/*Work Css Start*/
+.work-main{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.work-main h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work-flex{
+  display: flex;
+  justify-content: center;  
+  gap: 20px;
+}
+.flex-col-work{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow:0px 4px 64.87px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 330px;
+}
+.work-main p {
+  text-align: center;
+  width: 90%;
+}
+.flex-col-work:hover{
+  box-shadow:0px 4px 64.87px #abb6f5 ;
+}
+/*Work Css End*/
+
+
+
