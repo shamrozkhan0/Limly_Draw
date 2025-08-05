@@ -19,12 +19,11 @@ const Banner = () => {
                 <li> <span className="colorcheck"><FaCheck /></span> Get 15 days free trial</li>
                 <li> <span className="colorcheck"><FaCheck /></span> No credit card is required</li>
                 <li> <span className="colorcheck"><FaCheck /></span> Cancel anytime</li>
-
             </ul>
         </div>{/***col***/}
 
         <div className="banner-col-40">
-            <img src={bannerImg} alt="" srcset="" />
+            <img src={bannerImg} alt="" srcSet="" />
         </div>{/***col***/}   
     </div>
     </div>{/**container**/}
