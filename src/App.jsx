@@ -1,6 +1,12 @@
 import './App.css'
 import Banner from './Comonents/Banner'
 import Navbar from './Comonents/Navbar'
+import Loader from './Comonents/Loader'
+import Partners from './Comonents/Partners'
+import Work from './Comonents/Work'
+import Secure from './Comonents/Secure'
+import Choose from './Comonents/Choose'
+
 
 
 // Here comes the components which have to render's after DOM loaded
@@ -9,6 +15,10 @@ const ComponentWrapper = () => {
       <>
         <Navbar />
         <Banner />
+        <Partners />
+        <Work />
+        <Secure />
+        <Choose />
       </>
     )
   }

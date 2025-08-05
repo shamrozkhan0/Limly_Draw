@@ -4,7 +4,7 @@ import partnerThree from '../assets/partner-3.png';
 import partnerFour from '../assets/partner-4.png';
 
 
-export const Partners = () => {
+const Partners = () => {
   return (
     <div className='partner-main'>
         <div className="container">
@@ -20,3 +20,6 @@ export const Partners = () => {
     </div>/**main**/
   )
 }
+
+
+export default Partners
