@@ -4,8 +4,7 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router'
 
 // ===============================
-// Don't touch the logical 
-// Written your suggest below murtaza
+// Don't make change in the logic! Instead write your suggestions below as an comment
 // 
 // ===============================
 
