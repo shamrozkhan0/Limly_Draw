@@ -13,6 +13,7 @@ import Testimonials from './Comonents/Testimonials'
 import { Routes, Route } from 'react-router'
 import Authentication from './Comonents/Authentication'
 import Login from './Comonents/Feature/Login'
+import Footer from './Comonents/Footer'
 
 const Landingpage = () => {
     return(
@@ -27,7 +28,8 @@ const Landingpage = () => {
         <Stats />
         <ProductPreview />
         <Testimonials />
-    </>
+        <Footer />
+      </>
     )
 }
 

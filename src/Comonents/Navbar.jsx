@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import { FaArrowRightLong } from "react-icons/fa6";
-
 import logo from '../assets/logo.png'
+
 const Navbar = () => {
   return (
     <>
