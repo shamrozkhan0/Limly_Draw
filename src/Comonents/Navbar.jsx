@@ -22,7 +22,7 @@ const Navbar = () => {
         <li><Link to="#" >Blog</Link></li>
         <li><Link to="#" >Contact</Link></li>
       </ul>
-      <button  className='btn-start'>Get Started <FaArrowRightLong /></button>
+      <Link to='authentication/login'  className='btn-start'>Get Started <FaArrowRightLong /></Link>
     </div>
   </div>
   </div>{/* {container} */}

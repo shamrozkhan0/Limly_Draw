@@ -64,7 +64,9 @@ p{
   font-size: 70px;
 }
 
-
+.bg-blue{
+  background-color: #0059EE;
+}
 
 
 /* Remove this CSS ASAP and appply Bootstrap or Tailwind */
@@ -598,7 +600,7 @@ ul.benefits li {
   align-items: center;
   gap: 10px;
   transition: 0.3s all ease-in-out;
-  cursor: pointer;
+  cursor: grab;
 
 } 
 .rev-col img{

@@ -9,10 +9,10 @@ const Partners = () => {
     <div className='partner-main'>
         <div className="container">
             <div className="partner-inner">
-                <img src={partnerOne} alt="" srcset="" />
-                <img src={partnerTwo} alt="" srcset="" />
-                <img src={partnerThree} alt="" srcset="" />
-                <img src={partnerFour} alt="" srcset="" />
+                <img src={partnerOne} alt="" srcSet="" />
+                <img src={partnerTwo} alt="" srcSet="" />
+                <img src={partnerThree} alt="" srcSet="" />
+                <img src={partnerFour} alt="" srcSet="" />
 
 
             </div>{/**inner**/}
