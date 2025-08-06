@@ -1,14 +1,7 @@
-
-
 import { useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router'
-
-// ===============================
-// Don't make change in the logic! Instead write your suggestions below as an comment
-// 
-// ===============================
 
 const Main = () => {
 

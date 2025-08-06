@@ -10,13 +10,12 @@ import { Subscribe } from './Comonents/Subscribe'
 import Stats from './Comonents/Stats'
 import ProductPreview from './Comonents/ProductPreview'
 import Testimonials from './Comonents/Testimonials'
+import { Routes, Route } from 'react-router'
+import Authentication from './Comonents/Authentication'
+import Login from './Comonents/Feature/Login'
 
-
-
-
-// Here comes the components which have to render's after DOM loaded
-const ComponentWrapper = () => {
-    return (
+const Landingpage = () => {
+    return(
       <>
         <Navbar />
         <Banner />
@@ -28,16 +27,30 @@ const ComponentWrapper = () => {
         <Stats />
         <ProductPreview />
         <Testimonials />
-      </>
+    </>
     )
-  }
+}
+
+// Here comes the components which have to render's after DOM loaded
+const ComponentWrapper = () => {
+  return (
+    <>
+        <Routes>
+          <Route path='/authentication' element={<Authentication />}>
+              <Route path='login' element={<Login/>} />
+          </Route>
+          <Route path='/' element={<Landingpage/>}></Route>
+        </Routes>
+    </>
+  )
+}
 
 function App({ DOMLoaded }) {
-    return (
-      <>
-        {DOMLoaded ? <ComponentWrapper /> : <Loader />}
-      </>
-    )
-  }
+  return (
+    <>
+      {DOMLoaded ? <ComponentWrapper/> : <Loader />}
+    </>
+  )
+}
 
 export default App
