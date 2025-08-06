@@ -9,6 +9,12 @@ import chooseIconThree from '../assets/icon-3.png';
 import chooseIconFour from '../assets/icon-4.png';
 
 
+import clientImage_1 from '../assets/client-1.png';
+import clientImage_2 from '../assets/client-2.png';
+import clientImage_3 from '../assets/client-3.png';
+
+
+
 export const WorkStep = [
     {
         id: 1,
@@ -58,4 +64,33 @@ export const ChooseStep = [
         title : "Easy Solutions",
         txt : "Simplify complex ideas with a platform built for speed, clarity, and ease — no learning curve required."
     }
+]
+
+
+
+export const clients = [
+    {
+        id: 1,
+        image: clientImage_1,
+        name : "Jenny Wilson",
+        position : "Project Manager at Microsoft",
+        review : "“I just simply love tools that make my life easier! I have everything that I need in one place, and that allows our team to be more organized and user-oriented.”"
+    },
+
+        {
+        id: 2,
+        image: clientImage_2,
+        name : "Robert Fox",
+        position : "Founder at Brain.co",
+        review : "“I really like that I can have all in one place: I can send emails and text messages, I can have live chat, show pop-ups and push notifications on my website and create dynamic page content”"
+    },
+
+
+        {
+        id: 3,
+        image: clientImage_3,
+        name : "Kristin Watson",
+        position : "UX Designer at Google",
+        review : "“Very easy to use and set up is simple. I can easily provide live support to my website visitors in real-time. It also provides many integrations.”"
+    },
 ]
