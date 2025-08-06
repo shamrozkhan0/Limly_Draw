@@ -10,6 +10,7 @@ import { Subscribe } from './Comonents/Subscribe'
 import Stats from './Comonents/Stats'
 import ProductPreview from './Comonents/ProductPreview'
 import Testimonials from './Comonents/Testimonials'
+import Footer from './Comonents/Footer'
 
 
 
@@ -28,6 +29,7 @@ const ComponentWrapper = () => {
         <Stats />
         <ProductPreview />
         <Testimonials />
+        <Footer />
       </>
     )
   }
