@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import { BrowserRouter } from 'react-router'
+import { BrowserRouter, } from 'react-router'
+import LBProvider from "./Comonents/LiveblocksProvider.jsx";
+
 
 const Main = () => {
 
@@ -28,10 +30,20 @@ const Main = () => {
     }
   }, []);
 
+
+
   return (
+
+
+       <LBProvider > 
     <BrowserRouter>
+      
       < App DOMLoaded={render} />
+      
     </BrowserRouter>
+      </LBProvider>
+
+
   )
 }
 
