@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="container">
     <div className="banner-flex">
          <div className="banner-col-60">
-            <h1>Where Innovation Meets Intelligent Thinking.</h1>
+            <h1 className='text-heading'>Where <span className='text-logo'>Innovation</span> Meets Intelligent Thinking.</h1>
             <p>We build strong foundations through trusted partnerships, driving forward with bold ideas and thoughtful execution.</p>
 
             <div className="btn-flex">
@@ -22,7 +22,7 @@ const Banner = () => {
             </ul>
         </div>{/***col***/}
 
-        <div className="banner-col-40">
+        <div className="banner-col-40 ">
             <img src={bannerImg} alt="" srcSet="" />
         </div>{/***col***/}   
     </div>
