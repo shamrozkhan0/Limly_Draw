@@ -1,51 +1,50 @@
+import { Route, Router, Routes } from 'react-router'
 import './App.css'
-import Banner from './Comonents/Banner'
-import Navbar from './Comonents/Navbar'
+import Login from './Auth/Login'
+import Register from './Auth/Register'
 import Loader from './Comonents/Loader'
-import Partners from './Comonents/Partners'
-import Work from './Comonents/Work'
-import Secure from './Comonents/Secure'
-import Choose from './Comonents/Choose'
-import { Subscribe } from './Comonents/Subscribe'
-import Stats from './Comonents/Stats'
-import ProductPreview from './Comonents/ProductPreview'
-import Testimonials from './Comonents/Testimonials'
-import { Routes, Route } from 'react-router'
-import Authentication from './Comonents/Authentication'
-import Login from './Comonents/Feature/Login'
-import Footer from './Comonents/Footer'
+import LandingPage from './Pages/LandingPage'
+import Whiteboard from "./pages/Whiteboard";
+import { AuthProvider } from "./context/AuthContext";
+import Dashboard from './Pages/Dashboard'
+import ProtectedRoute from './Comonents/ProtectedRoute'
 
-const Landingpage = () => {
+
+
+const ComponentWrapper = () => {
     return(
       <>
-        <Navbar />
-        <Banner />
-        <Partners />
-        <Work />
-        <Secure />
-        <Choose />
-        <Subscribe />
-        <Stats />
-        <ProductPreview />
-        <Testimonials />
-        <Footer />
+
+      <AuthProvider>
+        <Routes>
+            <Route path="/" element={<LandingPage />} />
+      <Route path='login' element={<Login/>} />
+      <Route path='sign-up' element={<Register/>} />
+
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/whiteboard/:roomId"
+            element={
+              <ProtectedRoute>
+                <Whiteboard />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </AuthProvider>
       </>
     )
 }
 
-// Here comes the components which have to render's after DOM loaded
-const ComponentWrapper = () => {
-  return (
-    <>
-        <Routes>
-          <Route path='/authentication' element={<Authentication />}>
-              <Route path='login' element={<Login/>} />
-          </Route>
-          <Route path='/' element={<Landingpage/>}></Route>
-        </Routes>
-    </>
-  )
-}
+
 
 function App({ DOMLoaded }) {
   return (
